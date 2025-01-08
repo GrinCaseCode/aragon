@@ -477,7 +477,7 @@ form {
 	background-size: cover;
 }
 .contacts .head-section {
-	margin-bottom: -70px;
+	margin-bottom: -65px;
 }
 .contacts .title-main {
 	max-width: 600px;
@@ -632,6 +632,9 @@ a.item-contact__link:hover {
 	color: #338147;
 	border-bottom: 1px #338147 solid;
 }
+.footer__mail:hover {
+	border-color: transparent;
+}
 .footer__feedback {
 	max-width: 352px;
 	margin: 0 auto;
@@ -658,6 +661,9 @@ a.item-contact__link:hover {
 }
 .footer-bottom a {
 	color: rgba(255, 255, 255, 0.24);
+}
+.footer-bottom a:hover {
+	color: rgba(255, 255, 255, 0.6);
 }
 .create {
 	gap: 12px;
