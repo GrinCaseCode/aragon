@@ -414,7 +414,7 @@
         margin-bottom: -25px;
     }
     .footer__contacts {
-        width: auto;
+        width: 184px;
     }
     .footer__title, .footer__contacts p, .footer__menu li, .footer__nav li {
         margin-bottom: 17px;
@@ -422,11 +422,8 @@
     .footer .phone-main {
         font-size: 16px;
     }
-    .footer-contacts-wrap {
-        display: block;
-    }
     .footer__feedback .row > div {
-        margin-top: 20px;
+        margin-top: 15px;
         margin-bottom: 0;
     }
     .col-nav {
@@ -533,8 +530,13 @@
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width : 360px) {
+    .footer__contacts {
+        width: auto;
+    }
+    .footer-contacts-wrap {
+        display: block;
+    }
 }
 
 
