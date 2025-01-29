@@ -65,6 +65,66 @@
         margin-top: 47px;
         font-size: 16px;
     }
+
+    
+    .about-content {
+        max-width: 730px;
+        font-size: 18px;
+    }
+    .page-about .title-big {
+        margin-left: -134px;
+        margin-bottom: 35px;
+        font-size: 110px;
+    }
+    .page-about {
+        padding-bottom: 200px;
+    }
+    .consultation {
+        padding-top: 170px;
+        padding-bottom: 140px;
+    }
+    .consultation__form .btn-main {
+        margin-top: 40px;
+    }
+    .consultation .title-main {
+        margin-bottom: 48px;
+    }
+    .breadcrumbs {
+        padding: 50px 0;
+        font-size: 15px;
+    }
+    .wrapper_page {
+        padding-top: 113px;
+    }
+    .wrap-units .row {
+        margin-bottom: -45px;
+    }
+    .wrap-units .row > div {
+        margin-bottom: 45px;
+    }
+    .wrap-units {
+        margin-top: 70px;
+    }
+    .page-about_service {
+        padding-bottom: 170px;
+    }
+    .page-contacts .item-contact {
+        padding: 22px 0;
+    }
+    .page-contacts .title-main {
+        margin-bottom: 22px;
+    }
+    .contacts-content {
+        max-width: 595px;
+    }
+    .title-map {
+        font-size: 25px;
+        margin-top: 60px;
+        margin-bottom: 25px;
+    }
+    .contacts-wrapper {
+        margin-right: -38px;
+    }
 }
 
 @media only screen and (max-width : 1600px) {
@@ -131,6 +191,66 @@
     .header .logo {
         margin-left: -50px;
     }
+
+    .wrapper_page {
+        padding-top: 99px;
+    }
+    .breadcrumbs {
+        padding: 42px 0;
+        font-size: 14px;
+    }
+    .about-content {
+        max-width: 633px;
+        font-size: 16px;
+    }
+    .page-about .title-big {
+        margin-left: -116px;
+        margin-bottom: 20px;
+        font-size: 91px;
+    }
+    .page-about {
+        padding-bottom: 170px;
+    }
+    .btn-main {
+        height: 60px;
+        font-size: 18px;
+        letter-spacing: 0.12em;
+    }
+    .wrap-units .row {
+        margin-bottom: -35px;
+    }
+    .wrap-units .row > div {
+        margin-bottom: 35px;
+    }
+    .wrap-units {
+        margin-top: 40px;
+    }
+    .unit-billbord {
+        font-size: 16px;
+    }
+    .unit-billbord__icon {
+        margin-bottom: 25px;
+    }
+    .page-about_service {
+        padding-bottom: 130px;
+    }
+    .item-etap__number {
+        font-size: 215px;
+    }
+    .menu__dropdown {
+        width: 530px;
+        padding: 55px 100px 50px 40px;
+    }
+    .menu__dropdown li a {
+        font-size: 37px;
+    }
+    .close-menu {
+        top: 20px;
+        right: 20px;
+    }
+    .contacts-wrapper {
+        margin-right: -30px;
+    }
 }
 
 @media only screen and (max-width : 1400px) {
@@ -158,6 +278,36 @@
     }
     .header .logo {
         margin-left: -20px;
+    }
+    .about-content {
+        max-width: 552px;
+        font-size: 14px;
+    }
+    .page-about .title-big {
+        margin-left: -96px;
+        margin-bottom: 17px;
+        font-size: 75px;
+    }
+    .wrapper_page {
+        padding-top: 91px;
+    }
+    .unit-billbord__icon {
+        height: 45px;
+        margin-bottom: 20px;
+    }
+    .menu__dropdown {
+        width: 480px;
+        padding: 40px 70px 40px 30px;
+    }
+    .menu__dropdown li a {
+        font-size: 33px;
+    }
+    .close-menu {
+        width: 26px;
+        height: 26px;
+    }
+    .contacts-wrapper {
+        margin-right: -20px;
     }
 }
 /* Large Devices, Wide Screens */
@@ -250,6 +400,39 @@
     }
     .header .logo {
         margin-left: 0;
+    }
+    .about-content {
+        max-width: 465px;
+    }
+    .wrapper_page {
+        padding-top: 77px;
+    }
+    .page-about_service .title-big {
+        font-size: 63px;
+    }
+    .wrap-units .row > div {
+        padding: 0 6px;
+        margin-bottom: 20px;
+    }
+    .wrap-units .row {
+        margin: 0 -6px;
+        margin-bottom: -20px;
+    }
+    .item-etap__number {
+        font-size: 192px;
+    }
+    .item-etap .title-main {
+        margin-bottom: 45px;
+    }
+    .item-etap__text {
+        margin-bottom: 50px;
+    }
+    .item-etap__bg {
+        transform: scale(0.8);
+        transform-origin: 0 0;
+    }
+    .contacts-wrapper {
+        margin-right: -15px;
     }
 }
 
@@ -472,7 +655,7 @@
         margin-bottom: 15px;
         display: block;
       }
-      .menu a {
+      .menu > li > a {
         margin: 0;
         padding: 12px 0;
         font-size: 15px;
@@ -516,6 +699,122 @@
     }
     .footer .container-fluid {
         padding: 0 15px;
+    }
+    .breadcrumbs {
+        padding: 25px 0;
+        font-size: 13px;
+    }
+    .about-content {
+        padding: 25px 15px;
+        max-width: 100%;
+    }
+    .page-about .title-big {
+        margin-left: 0;
+        margin-bottom: 20px;
+        font-size: 46px;
+    }
+    .page-about {
+        padding-bottom: 33px;
+    }
+    .about_page {
+        padding-bottom: 0;
+    }
+    .consultation {
+        padding: 90px 0;
+    }
+    .consultation__form .btn-main {
+        margin-top: 23px;
+    }
+    .consultation .title-main {
+        margin-bottom: 25px;
+    }
+    .page-about .title-big {
+        font-size: 35px;
+    }
+    .about-content .btn-circle {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .item-etap__number {
+        font-size: 160px;
+        display: block;
+        text-align: left;
+    }
+    .item-etap .title-main {
+        margin-bottom: 33px;
+    }
+    .item-etap__text {
+        margin-bottom: 35px;
+    }
+    .item-etap {
+        padding-top: 55px;
+        margin-bottom: 70px;
+    }
+    .item-etap__bg {
+        transform: scale(0.5);
+    }
+    .item-etap:nth-child(3) .item-etap__bg {
+        left: -140px;
+    }
+    .etaps {
+        padding-bottom: 25px;
+    }
+    .portfolio_service {
+        padding-bottom: 0;
+    }
+    .menu__haschild > a::after {
+        font-size: 19px;
+        margin-right: 10px;
+        transition: all 0.3s;
+    }
+    .menu__dropdown {
+        width: 100%;
+        padding: 0;
+        padding-top: 14px;
+        background: transparent;
+        position: relative;
+        top: 0;
+        left: 0;
+        height: auto;
+    }
+    .close-menu {
+        display: none;
+    }
+    .menu__dropdown li a {
+        font-size: 26px;
+        padding-left: 20px;
+    }
+    .menu__dropdown li a::before {
+        top: 14px;
+    }
+    .menu__haschild.opened > a::after {
+        transform: rotate(-90deg);
+    }
+    .item-input input, 
+    .item-input textarea {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contacts-form {
+        margin-top: 45px;
+        max-width: 100%;
+    }
+    .contacts-wrapper {
+        margin-right: 0;
+    }
+    .contacts-wrapper #map {
+        height: 380px;
+    }
+    .title-map {
+        font-size: 24px;
+        margin-top: 39px;
+    }
+    .item-map {
+        margin-bottom: 25px;
+    }
+    .page-contacts .breadcrumbs {
+        padding-bottom: 33px;
     }
 }
 

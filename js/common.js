@@ -18,6 +18,43 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
     $menu.removeClass("fixed").addClass("default");
   }
 
+  {
+	if ($(window).width() > 992) { 
+		$(".menu__haschild").on("mouseenter", function () {
+			$(this).find(".menu__dropdown").stop(true, true).fadeIn(200);
+		}).on("mouseleave", function () {
+			
+		});
+		$(document).mouseup(function (e) {
+			var container = $(".menu__dropdown");
+			if (container.has(e.target).length === 0){
+				$(".menu__dropdown").fadeOut(200);
+			}
+		  });		
+	}
+}
+
+{
+	if ($(window).width() < 992) { 
+		$(".menu__haschild > a").click(function(e) {
+			e.preventDefault();
+			$(".menu__dropdown").slideUp(200);
+			$(this).parent().siblings().removeClass("opened");
+			if ($(this).siblings(".menu__dropdown").is(":hidden")) {
+				$(this).siblings(".menu__dropdown").slideDown(200);
+				$(this).parent().addClass("opened");
+			} else {
+				$(this).siblings(".menu__dropdown").slideUp(200);
+				$(this).parent().removeClass("opened");
+			}
+		});
+	}
+}
+
+$(".close-menu").click(function() {
+	$(".menu__dropdown").fadeOut(200);
+});
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
