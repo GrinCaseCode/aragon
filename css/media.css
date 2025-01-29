@@ -801,6 +801,7 @@
         max-width: 100%;
     }
     .contacts-wrapper {
+        margin-top: 35px;
         margin-right: 0;
     }
     .contacts-wrapper #map {
@@ -815,6 +816,9 @@
     }
     .page-contacts .breadcrumbs {
         padding-bottom: 33px;
+    }
+    .page-contacts {
+        padding-top: 47px;
     }
 }
 
