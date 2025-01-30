@@ -1466,3 +1466,6 @@ a.item-contact__link:hover {
 	text-align: center;
 	font-family: "ViaodaLibre";
 }
+.fancybox-infobar {
+	display: none !important;
+}
