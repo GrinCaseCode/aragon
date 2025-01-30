@@ -20,11 +20,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
   {
 	if ($(window).width() > 992) { 
-		$(".menu__haschild").on("mouseenter", function () {
-			$(this).find(".menu__dropdown").stop(true, true).fadeIn(200);
-		}).on("mouseleave", function () {
-			
-		});
 		$(document).mouseup(function (e) {
 			var container = $(".menu__dropdown");
 			if (container.has(e.target).length === 0){
@@ -34,22 +29,19 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	}
 }
 
-{
-	if ($(window).width() < 992) { 
-		$(".menu__haschild > a").click(function(e) {
-			e.preventDefault();
-			$(".menu__dropdown").slideUp(200);
-			$(this).parent().siblings().removeClass("opened");
-			if ($(this).siblings(".menu__dropdown").is(":hidden")) {
-				$(this).siblings(".menu__dropdown").slideDown(200);
-				$(this).parent().addClass("opened");
-			} else {
-				$(this).siblings(".menu__dropdown").slideUp(200);
-				$(this).parent().removeClass("opened");
-			}
-		});
+$(".menu__haschild > a").click(function(e) {
+	e.preventDefault();
+	$(".menu__dropdown").slideUp(200);
+	$(this).parent().siblings().removeClass("opened");
+	if ($(this).siblings(".menu__dropdown").is(":hidden")) {
+		$(this).siblings(".menu__dropdown").slideDown(200);
+		$(this).parent().addClass("opened");
+	} else {
+		$(this).siblings(".menu__dropdown").slideUp(200);
+		$(this).parent().removeClass("opened");
 	}
-}
+});
+
 
 $(".close-menu").click(function() {
 	$(".menu__dropdown").fadeOut(200);
@@ -95,8 +87,43 @@ $(".close-menu").click(function() {
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 4000,
-		prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
-		nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+	});
+
+	$('.slider-for').slick({
+		arrows: true,
+		dots: false,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		asNavFor: '.slider-nav',
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					arrows: false,
+				}
+			}
+		]
+	});
+
+	$('.slider-nav').slick({
+		arrows: false,
+		dots: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerMode: true,
+		variableWidth: true,
+		asNavFor: '.slider-for',
+		touchThreshold: 1000,
+		focusOnSelect: true,
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="img/prev.svg" alt="alt"><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><img src="img/next.svg" alt="alt"><div/>',
 	});
 
 
